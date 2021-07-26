@@ -10,6 +10,7 @@ const Square = ({
   offsetY,
   rotation,
   borderRadius,
+  opacity,
 }) => {
   let style = {
     wrapper: {
@@ -19,6 +20,7 @@ const Square = ({
       marginLeft: offsetX,
       marginTop: offsetY,
       transform: [{ rotate: `${rotation}deg` }],
+      opacity: opacity,
     },
     square: {
       width: size,
@@ -34,7 +36,7 @@ const Square = ({
   );
 };
 
-const Circle = ({ size, color, x, y, offsetX, offsetY }) => {
+const Circle = ({ size, color, x, y, offsetX, offsetY, opacity }) => {
   let style = {
     wrapper: {
       position: "absolute",
@@ -42,6 +44,7 @@ const Circle = ({ size, color, x, y, offsetX, offsetY }) => {
       top: y,
       marginLeft: offsetX,
       marginTop: offsetY,
+      opacity: opacity,
     },
     circle: {
       width: size,
@@ -57,7 +60,7 @@ const Circle = ({ size, color, x, y, offsetX, offsetY }) => {
   );
 };
 
-const Donut = ({ size, color, x, y, offsetX, offsetY }) => {
+const Donut = ({ size, color, x, y, offsetX, offsetY, opacity }) => {
   let style = {
     wrapper: {
       position: "absolute",
@@ -65,6 +68,7 @@ const Donut = ({ size, color, x, y, offsetX, offsetY }) => {
       top: y,
       marginLeft: offsetX,
       marginTop: offsetY,
+      opacity: opacity,
     },
     donut: {
       width: size,
@@ -90,6 +94,7 @@ const DiamondNarrow = ({
   offsetY,
   rotation,
   borderRadius,
+  opacity,
 }) => {
   let style = {
     wrapper: {
@@ -99,6 +104,7 @@ const DiamondNarrow = ({
       marginLeft: offsetX,
       marginTop: offsetY,
       transform: [{ rotate: `${rotation}deg` }],
+      opacity: opacity,
     },
     diamondNarrow: {},
     diamondNarrowTop: {
@@ -139,7 +145,7 @@ const DiamondNarrow = ({
   );
 };
 
-const CutDiamond = ({ size, color, x, y, offsetX, offsetY, rotation }) => {
+const CutDiamond = ({ size, color, x, y, offsetX, offsetY, rotation, opacity }) => {
   let style = {
     wrapper: {
       position: "absolute",
@@ -148,6 +154,7 @@ const CutDiamond = ({ size, color, x, y, offsetX, offsetY, rotation }) => {
       marginLeft: offsetX,
       marginTop: offsetY,
       transform: [{ rotate: `${rotation}deg` }],
+      opacity: opacity,
     },
     cutDiamond: {},
     cutDiamondTop: {
@@ -185,7 +192,7 @@ const CutDiamond = ({ size, color, x, y, offsetX, offsetY, rotation }) => {
   );
 };
 
-const Triangle = ({ size, color, x, y, offsetX, offsetY, rotation }) => {
+const Triangle = ({ size, color, x, y, offsetX, offsetY, rotation, opacity }) => {
   let style = {
     wrapper: {
       position: "absolute",
@@ -194,6 +201,7 @@ const Triangle = ({ size, color, x, y, offsetX, offsetY, rotation }) => {
       marginLeft: offsetX,
       marginTop: offsetY,
       transform: [{ rotate: `${rotation}deg` }],
+      opacity: opacity,
     },
     triangle: {
       width: 0,
@@ -229,6 +237,7 @@ const Shapes = ({ figures, figureColor, figureSize, style }) => {
           offsetY: e.offsetY,
           x: e.x,
           y: e.y,
+          opacity: e.opacity,
           rotation: e.rotation,
           color,
           borderRadius: e.borderRadius,

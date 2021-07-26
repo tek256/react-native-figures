@@ -99,6 +99,7 @@ export const Example = () => {
 | `offsetY` | Numbered offset (i.e 51, -49, 99) | |
 | `rotation` | Numbered rotation in Degrees | |
 | `borderRadius` | Numbered size for border radius | Only works with Square |
+| `opacity` | Float between 0 and 1 (i.e 0.4) | |
 
 ## License
 MIT © [Devon (tek256)](https://github.com/tek256/react-native-figures/blob/main/LICENSE)
