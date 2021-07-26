@@ -1,5 +1,5 @@
 {
-  "name": "react-native-shapes",
+  "name": "react-native-figures",
   "version": "0.1.0",
   "description": "a shape library for react-native",
   "main": "src/index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tek256/react-native-shapes.git"
+    "url": "git+https://github.com/tek256/react-native-figures.git"
   },
   "keywords": [
     "react",
@@ -24,7 +24,7 @@
   "author": "tek256",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tek256/react-native-shapes/issues"
+    "url": "https://github.com/tek256/react-native-figures/issues"
   },
-  "homepage": "https://github.com/tek256/react-native-shapes#readme"
+  "homepage": "https://github.com/tek256/react-native-figures#readme"
 }

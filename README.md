@@ -1,7 +1,7 @@
 <div id="header">
     <p align="center">
-      <b>react-native-shapes</b><br>
-  	  <span font-size="16px">shapes library for react-native</span><br>
+      <b>react-native-figures</b><br>
+  	  <span font-size="16px">a shape library for react-native</span><br>
       <span font-size="12px">Made by <a href="http://tek256.com">Devon</a> with love.</span><br><br>
       <span><a href="#examples">Examples</a> | <a href="https://github.com/sponsors/tek256">Support</a></span><br><br>
     </p>
@@ -9,10 +9,10 @@
 
 ## About
 
-react-native-shapes is an attempt to streamline the implementation of various shapes for quick and easy usage. It offers an option to pass an array of figures into a container or to just manage individual shapes yourself.
+react-native-figures is an attempt to streamline the implementation of various shapes for quick and easy usage. It offers an option to pass an array of figures into a container or to just manage individual shapes yourself.
 
 ## Shapes
-Currently react-native-shapes supports the following shape types:
+Currently react-native-figures supports the following shape types:
 ```
 - Circle 
 - Donut
@@ -29,7 +29,7 @@ Shapes Container style:
 ```js
 import React from "react";
 import { View } from "react-native";
-import { Shapes } from "react-native-shapes";
+import { Shapes } from "react-native-figures";
 
 export const Example = () => {
   return (
@@ -73,7 +73,7 @@ Individual Shape Components:
 ```js
 import React from "react";
 import { View } from "react-native";
-import { Circle, Triangle, DiamondNarrow } from "react-native-shapes";
+import { Circle, Triangle, DiamondNarrow } from "react-native-figures";
 
 export const Example = () => {
   return (
@@ -101,4 +101,4 @@ export const Example = () => {
 | `borderRadius` | Numbered size for border radius | Only works with Square |
 
 ## License
-MIT © [Devon (tek256)](https://github.com/tek256/react-native-shapes/blob/main/LICENSE)
+MIT © [Devon (tek256)](https://github.com/tek256/react-native-figures/blob/main/LICENSE)
