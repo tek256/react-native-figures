@@ -6,4 +6,4 @@ export {
   DiamondNarrow,
   CutDiamond,
   Triangle,
-} from "./Shapes";
+} from "./shapes";
