@@ -1,0 +1,30 @@
+{
+  "name": "react-native-shapes",
+  "version": "0.1.0",
+  "description": "a shape library for react-native",
+  "main": "src/index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tek256/react-native-shapes.git"
+  },
+  "keywords": [
+    "react",
+    "react",
+    "native",
+    "shapes",
+    "background",
+    "shapes"
+  ],
+  "author": "tek256",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tek256/react-native-shapes/issues"
+  },
+  "homepage": "https://github.com/tek256/react-native-shapes#readme"
+}
