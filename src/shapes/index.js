@@ -1,4 +1,5 @@
 import React from "react";
+import { Dimensions } from "react-native";
 import { View } from "react-native";
 
 const Square = ({
@@ -223,18 +224,38 @@ const Triangle = ({ size, color, x, y, offsetX, offsetY, rotation, opacity }) =>
   );
 };
 
-const Shapes = ({ figures, figureColor, figureSize, style }) => {
+const Shapes = ({ figures, figureColor, figureSize, style, scaling, scalingOffsets }) => {
+  const width = Dimensions.get("window").width;
+  const height = Dimensions.get("window").height;
+
   return (
     <View style={style}>
       {figures.map((e, i) => {
-        const sizefigure = e.size || figureSize;
+        let sizefigure = e.size || figureSize || 100;
+        let offsetX = e.offsetX || 0;
+        let offsetY = e.offsetY || 0;
+
+        if(scaling || e.scaling){
+          if(e?.scaling == false){ 
+            sizefigure = sizefigure;
+          } else {
+            sizefigure = (sizefigure * width);
+          }
+        }
+
+        if(scalingOffsets || e.scalingOffsets) {
+          if(e?.scalingOffsets != false){
+            offsetX *= width;
+            offsetY *= height;
+          }
+        }
 
         const color = e.color || figureColor;
         const props = {
           key: i,
           size: sizefigure,
-          offsetX: e.offsetX,
-          offsetY: e.offsetY,
+          offsetX,
+          offsetY,
           x: e.x,
           y: e.y,
           opacity: e.opacity,

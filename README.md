@@ -91,15 +91,17 @@ export const Example = () => {
 | Name | Options | Note | 
 | ---- | ------- | ---- |
 | `type` | Square, Circle, Donut, DiamondNarrow, CutDiamond, Triangle | Only used in `<Shapes/>` container figure objects |
-| `size` | Number | |
+| `size` | Number | Is scale 0.0-1.0 of screen size if `scaling` is enabled |
 | `color` | Color | Color per specific shape |
 | `figureColor` | Color | Default color for figures |
 | `figures` | Lits of figures (js objects) i.e `[{ type: "circle" ...},{type: "square" ...}]` | Only used in `<Shapes/>` container |
-| `offsetX` | Numbered offset (i.e 50, 1, -100) | |
-| `offsetY` | Numbered offset (i.e 51, -49, 99) | |
+| `offsetX` | Numbered offset (i.e 50, 1, -100) | Is scale 0.0-1.0 of screen width if `scalingOffsets` is enabled |
+| `offsetY` | Numbered offset (i.e 51, -49, 99) | Is scale 0.0-1.0 of screen height if `scalingOffsets` is enabled |
 | `rotation` | Numbered rotation in Degrees | |
 | `borderRadius` | Numbered size for border radius | Only works with Square |
 | `opacity` | Float between 0 and 1 (i.e 0.4) | |
+| `scaling` | `true`/`false` | Enable size to be considered a scale of 0.0-1.0 of screen size. Default: `false` |
+| `scalingOffsets` | `true`/`false` | Enable offsets to be considered in a scale of 0.0-1.0 of screen size. Default: `false` | 
 
 ## License
 MIT © [Devon (tek256)](https://github.com/tek256/react-native-figures/blob/main/LICENSE)
