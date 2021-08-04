@@ -1,6 +1,6 @@
 {
   "name": "react-native-figures",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "a shape library for react-native",
   "main": "src/index.js",
   "directories": {
