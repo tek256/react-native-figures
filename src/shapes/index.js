@@ -146,7 +146,16 @@ const DiamondNarrow = ({
   );
 };
 
-const CutDiamond = ({ size, color, x, y, offsetX, offsetY, rotation, opacity }) => {
+const CutDiamond = ({
+  size,
+  color,
+  x,
+  y,
+  offsetX,
+  offsetY,
+  rotation,
+  opacity,
+}) => {
   let style = {
     wrapper: {
       position: "absolute",
@@ -193,7 +202,16 @@ const CutDiamond = ({ size, color, x, y, offsetX, offsetY, rotation, opacity }) 
   );
 };
 
-const Triangle = ({ size, color, x, y, offsetX, offsetY, rotation, opacity }) => {
+const Triangle = ({
+  size,
+  color,
+  x,
+  y,
+  offsetX,
+  offsetY,
+  rotation,
+  opacity,
+}) => {
   let style = {
     wrapper: {
       position: "absolute",
@@ -224,7 +242,15 @@ const Triangle = ({ size, color, x, y, offsetX, offsetY, rotation, opacity }) =>
   );
 };
 
-const Shapes = ({ figures, figureColor, figureSize, style, scaling, scalingOffsets }) => {
+const Shapes = ({
+  figures,
+  figureColor,
+  figureSize,
+  style,
+  scaling,
+  scalingOffsets,
+  sizeBasedOffsets,
+}) => {
   const width = Dimensions.get("window").width;
   const height = Dimensions.get("window").height;
 
@@ -235,19 +261,24 @@ const Shapes = ({ figures, figureColor, figureSize, style, scaling, scalingOffse
         let offsetX = e.offsetX || 0;
         let offsetY = e.offsetY || 0;
 
-        if(scaling || e.scaling){
-          if(e?.scaling == false){ 
+        if (scaling || e.scaling) {
+          if (e?.scaling == false) {
             sizefigure = sizefigure;
           } else {
-            sizefigure = (sizefigure * width);
+            sizefigure = sizefigure * width;
           }
         }
 
-        if(scalingOffsets || e.scalingOffsets) {
-          if(e?.scalingOffsets != false){
+        if (scalingOffsets || e.scalingOffsets) {
+          if (e?.scalingOffsets != false) {
             offsetX *= width;
             offsetY *= height;
           }
+        }
+
+        if (sizeBasedOffsets) {
+          offsetX = sizefigure * e.offsetX;
+          offsetY = sizefigure * e.offsetY;
         }
 
         const color = e.color || figureColor;

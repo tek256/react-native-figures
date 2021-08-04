@@ -102,6 +102,7 @@ export const Example = () => {
 | `opacity` | Float between 0 and 1 (i.e 0.4) | |
 | `scaling` | `true`/`false` | Enable size to be considered a scale of 0.0-1.0 of screen size. Default: `false` |
 | `scalingOffsets` | `true`/`false` | Enable offsets to be considered in a scale of 0.0-1.0 of screen size. Default: `false` | 
+| `sizeBasedOffsets` | `true`/`false` | Enabled offsets based on the size of the figure. Default: `false` |
 
 ## License
 MIT © [Devon (tek256)](https://github.com/tek256/react-native-figures/blob/main/LICENSE)
