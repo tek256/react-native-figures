@@ -3,7 +3,7 @@
       <b>react-native-figures</b><br>
   	  <span font-size="16px">a shape library for react-native</span><br>
       <span font-size="12px">Made by <a href="http://tek256.com">Devon</a> with love.</span><br><br>
-      <span><a href="#examples">Examples</a> | <a href="https://github.com/sponsors/tek256">Support</a></span><br><br>
+      <span><a href="#examples">Examples</a></span><br><br>
     </p>
 </div>
 
